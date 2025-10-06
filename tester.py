@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("/mnt/c/Users/leoho/Downloads/Solana_daily_data_2018_2024.csv")
 print(df.tail())
 
+# Check
 
 def momentum(data, short_period, long_period):
     data['short_ma'] = data['Close'].rolling(short_period).mean()
